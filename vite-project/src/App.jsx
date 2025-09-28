@@ -20,7 +20,7 @@ export default function App() {
           borderRadius: "12px", 
           backgroundColor: "#2a2a2a", 
           boxShadow: "0 4px 10px rgba(0,0,0,0.4)",
-          color: "#f1f1f1" // світлий текст для контрасту
+          color: "#f1f1f1"
         }}
       >
         <h1 style={{ textAlign: "center", marginBottom: "1rem" }}>To-Do List</h1>
