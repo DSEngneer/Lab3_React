@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import TodoList from "./TodoList";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div 
+      style={{ 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center", 
+        minHeight: "100vh", 
+        backgroundColor: "#1e1e1e" // темний фон
+      }}
+    >
+      <div 
+        style={{ 
+          maxWidth: "400px", 
+          width: "100%", 
+          padding: "2rem", 
+          borderRadius: "12px", 
+          backgroundColor: "#2a2a2a", 
+          boxShadow: "0 4px 10px rgba(0,0,0,0.4)",
+          color: "#f1f1f1" // світлий текст для контрасту
+        }}
+      >
+        <h1 style={{ textAlign: "center", marginBottom: "1rem" }}>To-Do List</h1>
+        <TodoList />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
-
-export default App
