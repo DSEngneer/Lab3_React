@@ -8,8 +8,8 @@ export default function App() {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center", 
-        minHeight: "100vh", 
-        backgroundColor: "#1e1e1e" // темний фон
+        minHeight: "100vh",
+        backgroundColor: "#1e1e1e"
       }}
     >
       <div 
