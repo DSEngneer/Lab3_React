@@ -20,7 +20,7 @@ export default function TodoItem({ task, onDelete }) {
       <span 
   style={{ 
     textDecoration: isCompleted ? "line-through" : "none",
-    color: isCompleted ? "#888" : "#f1f1f1", // завжди світлий текст
+    color: isCompleted ? "#888" : "#f1f1f1",
     flexGrow: 1
   }}
 >
